@@ -33,7 +33,7 @@ BasicCard.prototype.printData = function() {
 	}
 
     //fs.appendFile(cardFileName, JSON.stringify(logObj) + "\n", (error) => { /* error */});
-	fs.appendFile(cardFileName, "\n" + JSON.stringify(logObj) + "\n", function(error, data){
+	fs.appendFile(cardFileName, JSON.stringify(logObj) + "\n", function(error, data){
 
       console.log(JSON.stringify(logObj));
 
@@ -47,7 +47,7 @@ BasicCard.prototype.getData = function() {
 	
 	fs.readFile(cardFileName, "utf8", function(err, data) {
 	  if (err) {
-	    return console.log(err);
+	    console.log(err);
 	  }
 
 	  var dataArray = data.split("\n");
