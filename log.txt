@@ -1,0 +1,17 @@
+
+front: aa
+back: bb
+cloze deletion: bb
+partila text: aa
+full text: aa
+cloze deletion: aa is bb
+partila text: aa
+full text: aa
+cloze deletion: aa
+partila text: ... is bb
+full text: aa is bb
+cloze deletion: t
+partila text: ...ramp
+full text: tramp
+front: top
+back: la{"cloze":"kiki","prtial":"... the pixy","fullText":"kiki the pixy"}{"cloze":"kiki","prtial":"... the pixy","fullText":"kiki the pixy"}
