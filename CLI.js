@@ -13,7 +13,7 @@ function start() {
 		  	{
 			    name: "menu",
 			    type: "list",
-				message: "Which card would you like to create?",
+				message: "What would you like to do?",
 				choices: ["Create Card", "Display Cards"]
 			}
 		])
@@ -53,7 +53,6 @@ function selectCardType() {
 		});
 };
 
-
 // Create cloze card
 function createClozeCard() {
 	inquirer
@@ -74,16 +73,17 @@ function createClozeCard() {
 	    	var clozeInput = answers.cloze.trim();
 	    	var textInput = answers.fullText.trim();
 
-		    if (clozeInput !== "" || textInput !=="") {
+		    if (clozeInput !== "" && textInput !=="") {
 		    	// print into text file.
 		    	var newCard = new ClozeCard(answers.fullText, answers.cloze);
 		    	
-		    	//newCard.printData();
-		    	
-		    	console.log(newCard.ifOK);//[Function]
-		    	//ifContinue();
-		    	if (newCard.ifOK === true) {
-		    		printClozeData(newCard.cloze, newCard.partial, newCard.fullText, "clozeCard.txt");
+		    	//console.log(newCard.error); // false or true
+		    	if (newCard.error === true){
+		    		//newCard.printData();
+		    		printClozeData(newCard.cloze, newCard.partial, newCard.fullText, "clozeCard.txt") 
+		    	}
+		    	else {
+		    		createClozeCard();
 		    	}
 		    	
 		    }
@@ -114,7 +114,7 @@ function createBasicCard() {
 	    	var frontInput = answers.front.trim();
 	    	var backInput = answers.back.trim();
 
-		    if (frontInput !== "" || backInput !=="") {
+		    if (frontInput !== "" && backInput !=="") {
 
 		    	// print into text file.
 		    	var newCard = new BasicCard(answers.front, answers.back);

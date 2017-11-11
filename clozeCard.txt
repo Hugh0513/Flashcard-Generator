@@ -1,11 +1,3 @@
-{"cloze":"kiki","prtial":"... the pixu","fullText":"kiki the pixu"}
-{"cloze":"kiki","prtial":"... is the pixy","fullText":"kiki is the pixy"}
-{"cloze":"kiki","prtial":"... the pixy","fullText":"kiki the pixy"}
-{"cloze":"kiki","prtial":"... ni m","fullText":"kiki ni m"}
-{"cloze":"pp","prtial":"...ipipi","fullText":"ppipipi"}
-{"cloze":"j","prtial":"h","fullText":"h"}
-
-{"cloze":"g","prtial":"...","fullText":"g"}
-{"cloze":"K","prtial":"...","fullText":"K"}
-{"cloze":"a","prtial":"...","fullText":"a"}
-{"cloze":"b","prtial":"a","fullText":"a"}
+{"cloze":"ipsum","prtial":"Lorem ... dolor sit amet","fullText":"Lorem ipsum dolor sit amet"}
+{"cloze":"irure","prtial":"Duis aute ... dolor","fullText":"Duis aute irure dolor"}
+{"cloze":"a","prtial":"...aa","fullText":"aaa"}
